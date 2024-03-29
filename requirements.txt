@@ -1,0 +1,4 @@
+pathlib
+streamlit
+openai
+dotenv
