@@ -1,5 +1,3 @@
-pip install openai
-
 from pathlib import Path
 import streamlit as st
 
@@ -17,7 +15,7 @@ comando = """
 Faça o resumo de um texto que está delimitado por ####
 O texto é a transcrição de uma reunião
 O resumo deve contar com todos os assuntos abordados
-O resumo deve ter no máximo 400 caracteres
+O resumo deve ter no máximo 1000 caracteres
 Caso não seja possível criar um resumo de 500 caracteres abordando todos os assuntos, crie um resumo de até 400 caracteres abordando os principais assuntos
 O resumo deve estar em texto corrido
 Abaixo do resumo deve ser apresentado no formato de bullet points todos os tópicos abordados na reunião
