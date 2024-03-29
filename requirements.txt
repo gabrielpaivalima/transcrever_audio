@@ -1,6 +1,4 @@
-ipykernel
 openai>=1.0.0
 python-dotenv
 streamlit
 streamlit_webrtc
-pydub
