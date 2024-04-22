@@ -12,24 +12,18 @@ cliente = openai.OpenAI()
 
 # Comando feito para a API da OPENAI:
 comando = """
-Faça o resumo de um texto que está delimitado por ####
-O texto é a transcrição de uma reunião
-O resumo deve contar com todos os assuntos abordados
+Por favor, resuma por tópicos do texto que está delimitado por ####
+
+O texto é um plano de ação de uma reunião
+O resumo deve contar com todos os assuntos abordados, principalmente quando será a próxima reunião
 O resumo deve ter no máximo 1000 caracteres
-Caso não seja possível criar um resumo de 500 caracteres abordando todos os assuntos, crie um resumo de até 400 caracteres abordando os principais assuntos
-O resumo deve estar em texto corrido
-Abaixo do resumo deve ser apresentado no formato de bullet points todos os tópicos abordados na reunião
+O resumo deve ser apresentado no formato de bullet points com todos os tópicos abordados na reunião
+Se necessário, em cada tópico um rápido texto detalhando do que se trata.
 
 O formato final que eu desejo é algo assim:
 
-Resumo reunião:
-- Escrever aqui o resumo da reunião conforme instruções acima
-
-Tópicos abordados na reunião:
-- Tópico 1:
-- Tópico 2:
-- Tópico 3:
-- Tópico n:
+Plano de Ação de (Nome da Pessoa):
+- Escrever aqui o resumo do plano de ação conforme instruções acima
 
 texto: ####{}####
 """
